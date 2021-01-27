@@ -12,6 +12,15 @@ postgres=# create database pythonstarter01 with owner 'tombetthauser';
 DATABASE_URL=postgresql://tombetthauser:password@localhost/pythonstarter01
 
 
+
+remember to run migrations and seeders if you havent already
+
+flask seed all
+flask seed undo
+
+flask db downgrade
+flask db upgrade
+
 npm install
 
 npm start

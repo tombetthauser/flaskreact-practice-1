@@ -8,6 +8,7 @@ from flask_login import LoginManager
 from .models import db, User
 from .api.user_routes import user_routes
 from .api.auth_routes import auth_routes
+from .api.pads_routes import pads_routes
 
 from .seeds import seed_commands
 
@@ -31,6 +32,7 @@ app.cli.add_command(seed_commands)
 app.config.from_object(Config)
 app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(auth_routes, url_prefix='/api/auth')
+app.register_blueprint(pads_routes, url_prefix='/api/pads')
 db.init_app(app)
 Migrate(app, db)
 
@@ -64,6 +66,7 @@ def inject_csrf_token(response):
     return response
 
 
+# PRODUCTION ONLY
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def react_root(path):

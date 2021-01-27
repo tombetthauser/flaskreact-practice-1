@@ -1,0 +1,23 @@
+
+    
+    This morning: planning.
+
+        By 9am: reach out to your circle instructors with your clone selection and a short description
+        9am-11:15am: instructors will reach out to you to schedule time for your team to meet
+
+        1) Get your Github repo created and properly shared (public repo, collaboraters can make PRs)
+            - joe-alves
+        2) Start some Wiki page documents even if they can't be filled out
+        3) Settle on some MVP features, begin to plan out your schema (not every detail must be captured)
+
+    This afternoon: coding.
+        1) Make sure you can run all needed processes on your machine. Get your .env and database credentials set.
+            - Set up .env file.
+            - Create your database user, database name.
+            - Run your migrations.
+            - Look at the README.
+        2) Collaborate with your team on some early-stage targets:
+            - 2 / 2 --> pair on a set of tasks.
+                - Setting up the models/migrations/seeders for your schema.
+                - Redux boilerplate.
+                - Front-end components.
